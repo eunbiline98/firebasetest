@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tamuActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_idmasuk"
+        android:hint="Kunci Akses"/>
+    <TextView
+        android:id="@+id/idtamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        tools:ignore="InvalidId" />
+    <Button
+        android:id="@+id/btn_akses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="aksesData"
+        android:text="Akses" />
+
+    <Button
+        android:id="@+id/btn_izin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginData"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="166dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="#fff" />
+
+</LinearLayout>

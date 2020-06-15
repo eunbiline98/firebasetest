@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="loginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/image_view_icon_firebase_activity_main"
+        android:layout_width="286dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_firebase" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_icon_firebase_activity_main"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="-58dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_icon_firebase_activity_main"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="-150dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login"
+        android:textColor="#fff" />
+</RelativeLayout>
